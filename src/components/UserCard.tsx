@@ -1,6 +1,6 @@
 const UserCard = () => {
     return ( 
-        <div className="flex flex-col w-full justify-center items-center">
+        <div className="flex flex-col w-full justify-center items-center mt-4 mb-10">
             <img 
                 src="/src/assets/images/profile-img.jpeg"
                 className="block w-2/5 md:w-2/6 lg:w-1/4 xl:w-1/5 2xl:w-1/6 mx-auto"

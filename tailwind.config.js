@@ -11,7 +11,7 @@ export default {
         DEFAULT: '#373737'
       },
       white: '#EEEEEE',
-      red: '#b91c1c',
+      red: '#ef4444',
       indigo: '#4f46e5',
     },
     extend: {},

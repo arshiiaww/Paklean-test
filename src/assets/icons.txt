@@ -9,3 +9,5 @@ Arrow up: import { TiArrowSortedUp } from "react-icons/ti";
 Calendar: import { IoCalendarOutline } from "react-icons/io5";
 Mail: import { IoMailOutline } from "react-icons/io5";
 Back arrow: import { HiOutlineArrowLeft } from "react-icons/hi";
+
+import { FaUser } from "react-icons/fa";
