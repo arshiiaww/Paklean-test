@@ -12,7 +12,7 @@ export default {
       },
       white: '#EEEEEE',
       red: '#ef4444',
-      indigo: '#4f46e5',
+      blue: '#3b82f6',
     },
     extend: {},
   },
