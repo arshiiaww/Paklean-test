@@ -1,0 +1,20 @@
+@import 'responsive.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@layer base {
+  body {
+    @apply bg-gray;
+    @apply text-white;
+    font-family: Urbanist;
+    line-height: 1.5;
+    font-weight: 500;
+    font-synthesis: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+}

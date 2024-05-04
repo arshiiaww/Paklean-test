@@ -1,0 +1,11 @@
+Edit profile : import { IoPersonOutline } from "react-icons/io5";
+Profile bottom right: import { IoPerson } from "react-icons/io5";
+Security: import { AiOutlineSafety } from "react-icons/ai";
+Logout: import { IoLogOutOutline } from "react-icons/io5";
+Payment: import { CgCreditCard } from "react-icons/cg";
+Cursor: import { BsCursorFill } from "react-icons/bs";
+Arrow down: import { TiArrowSortedDown } from "react-icons/ti";
+Arrow up: import { TiArrowSortedUp } from "react-icons/ti";
+Calendar: import { IoCalendarOutline } from "react-icons/io5";
+Mail: import { IoMailOutline } from "react-icons/io5";
+Back arrow: import { HiOutlineArrowLeft } from "react-icons/hi";
