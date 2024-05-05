@@ -1,6 +1,6 @@
 # Paklean's Test Profile Application
 
-This is a React application that provides a user profile page and an edit profile page. It uses local storage or cookies to persist user data, and includes features such as a calendar component for selecting birth dates, a dropdown component for selecting gender, and multi-language support using i18n.
+This is a React application that provides a user profile page and an edit profile page. It uses local storage to persist user data, and includes features such as a calendar component for selecting birth dates, a dropdown component for selecting gender, and multi-language support using i18n.
 
 ## Features
 
