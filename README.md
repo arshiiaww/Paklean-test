@@ -2,7 +2,7 @@
 
 This is a React application that provides a user profile page and an edit profile page. It uses local storage to persist user data, and includes features such as a calendar component for selecting birth dates, a dropdown component for selecting gender, and multi-language support using i18n.
 
-P.s If I had more time I could work more on the animations, styles and responsiveness. But anyways, this is how I did it.
+*P.s If I had more time I could work more on the animations, styles and responsiveness. But anyways, this is how I did it.*
 
 ## Features
 
