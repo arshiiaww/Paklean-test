@@ -21,9 +21,9 @@ interface FormData {
 
 const ProfilePage: React.FC = () => {
     const fields = {
-        fullName: '',
+        fullName: 'Fatemehosseini',
         firstName: '',
-        email: '',
+        email: 'fatemepaklean@gmail.com',
         birthDate: '',
         phoneNumber: '',
         gender: '',
@@ -71,7 +71,7 @@ const ProfilePage: React.FC = () => {
             <UserCard fullName={formData.fullName} email={formData.email} />
             <nav className='w-full min-[440px]:w-2/3 sm:w-1/2 lg:w-1/3 xl:w-1/4 min-[440px]:mx-auto'>
                 <ul>
-                    <li className='py-3 hover:bg-[#262626] rounded-md'>
+                    <li className='py-3 hover:bg-[#262626] rounded-md transition ease-in-out duration-150'>
                         <Link to="/edit-profile">
                             <div className='flex items-center text-blue-500 gap-6'>
                                 <FaRegUser className='scale-125 ml-3'/>
@@ -79,7 +79,7 @@ const ProfilePage: React.FC = () => {
                             </div>
                         </Link>
                     </li>
-                    <li className='py-3 hover:bg-[#262626] rounded-md'>
+                    <li className='py-3 hover:bg-[#262626] rounded-md transition ease-in-out duration-150'>
                         <Link to="/" >
                             <div className='flex items-center text-blue-500 gap-6'>
                                 <CgCreditCard className=' scale-125 ml-3' />
@@ -87,7 +87,7 @@ const ProfilePage: React.FC = () => {
                             </div>
                         </Link>
                     </li>
-                    <li className='py-3 hover:bg-[#262626] rounded-md'>
+                    <li className='py-3 hover:bg-[#262626] rounded-md transition ease-in-out duration-150'>
                         <Link to="/">
                             <div className='flex items-center text-blue-500 gap-6'>
                                 <AiOutlineSafety className='scale-150 ml-3' />
@@ -95,21 +95,22 @@ const ProfilePage: React.FC = () => {
                             </div>
                         </Link>
                     </li>
-                    <li className='py-3 text-red hover:bg-[#7f1d1d] hover:bg-opacity-35 rounded-md cursor-pointer' onClick={handleIsOpen}>
+                    <li className='py-3 text-red hover:bg-[#7f1d1d] hover:bg-opacity-35 rounded-md cursor-pointer transition ease-in-out duration-150' onClick={handleIsOpen}>
                         <div className='flex items-center text-blue-500 gap-6'>
                             <IoLogOutOutline className='scale-[1.7] ml-3' />
                             <span className=''>{t("profile.logout")}</span>
                         </div>
                         {isOpen && 
                                 <>
-                                <div className='fixed bottom-0 left-0 right-0 bg-gray h-1/3 p-4 transition-transform duration-300 text-white z-[2] rounded-t-[35px]'>
+                                <div className='fixed bottom-0 left-0 right-0 bg-gray h-1/3 p-4 transition ease-in-out duration-150 text-white z-[2] rounded-t-[35px]'>
+                                    <div className="bg-white w-10 h-[2px] mx-auto mt-2 rounded-md"></div>
                                     <h4 className='text-red text-[23px] text-center font-semibold pt-4'>{t("profile.log-out")}</h4>
                                     <p className='text-md text-left min-[440px]:text-center mt-5'>{t("profile.question")}</p>
                                     <div className="flex justify-between mt-4">
-                                      <button className="bg-white text-blue font-semibold rounded-md p-3 w-[125px]" onClick={handleIsOpen}>
+                                      <button className="bg-white text-blue font-semibold rounded-md p-3 w-[125px] transition ease-in-out duration-150 hover:text-white hover:bg-blue" onClick={handleIsOpen}>
                                       {t("profile.cancel")}
                                       </button>
-                                      <button className='bg-blue text-gray font-semibold rounded-md p-3 w-[125px]' onClick={handleLogout}>{t("profile.yes")}</button>
+                                      <button className='bg-blue text-gray font-semibold rounded-md p-3 w-[125px] transition ease-in-out duration-150 hover:text-red hover:bg-gray' onClick={handleLogout}>{t("profile.yes")}</button>
                                     </div>
                                 </div>
                                 <div className='flex fixed top-0 left-0 z-[1] w-full h-full bg-white opacity-50'></div>

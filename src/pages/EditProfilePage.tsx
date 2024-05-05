@@ -17,21 +17,23 @@ interface FormData {
   }
   
 const EditProfilePage: React.FC = () => {
-    const [formData, setFormData] = useState<FormData>({
-        fullName: '',
+    const fields = {
+        fullName: 'Fatemehosseini',
         firstName: '',
-        email: '',
+        email: 'fatemepaklean@gmail.com',
         birthDate: '',
         phoneNumber: '',
         gender: '',
-      });
+    }
+
+    const [formData, setFormData] = useState<FormData>(fields);
 
     const navigate = useNavigate();
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
-        // Save the edited data into local storage or cookies
+        // Save the edited data into local storage
         localStorage.setItem('formData', JSON.stringify(formData));
 
         // Navigate back to the profile page
@@ -102,7 +104,7 @@ const EditProfilePage: React.FC = () => {
                     onChange={(newGender) => setFormData({ ...formData, gender: newGender })}
                     options={['Male', 'Female', 'Other']}
                 />
-                <button className='w-full mx-auto bg-blue text-gray rounded-md p-3 mt-8 text-sm font-black'>{t("editProfile.update")}</button>
+                <button className='w-full mx-auto bg-blue text-gray rounded-md p-3 mt-8 text-sm font-black transition ease-in-out duration-150 hover:text-blue hover:bg-white'>{t("editProfile.update")}</button>
             </form>
         </div>
     );

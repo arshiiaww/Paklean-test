@@ -15,7 +15,7 @@ const BottomSheet: React.FC = () => {
                     </Link>
                 </div>
                 <Link to="/" className="absolute top-[-30%] left-2/4 -translate-x-1/2">
-                    <div className="flex justify-center items-center w-14 h-14 rounded-full bg-blue hover:shadow-[0px_5px_15px_0px_#3b82f6]">
+                    <div className="flex justify-center items-center w-14 h-14 rounded-full bg-blue transition ease-in-out duration-150 hover:shadow-[0px_5px_15px_0px_#3b82f6]">
                         <BsCursorFill className="scale-150" style={{fill: "#373737"}} />
                     </div>
                 </Link>
