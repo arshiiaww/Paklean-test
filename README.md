@@ -1,30 +1,53 @@
-# React + TypeScript + Vite
+# Paklean's Test Profile Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React application that provides a user profile page and an edit profile page. It uses local storage or cookies to persist user data, and includes features such as a calendar component for selecting birth dates, a dropdown component for selecting gender, and multi-language support using i18n.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- User profile page displaying personal information
+- Edit profile page with form validation
+- Calendar component for selecting birth date
+- Dropdown component for selecting gender
+- Multi-language support with English and Spanish translations
+- Local storage or cookie-based data persistence
+- Logout functionality with bottom sheet component
 
-## Expanding the ESLint configuration
+## Prerequisites
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Node.js (version 14 or later)
+- npm (version 6 or later)
 
-- Configure the top-level `parserOptions` property like this:
+## Installation
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+1. Clone the repository: git clone https://github.com/arshiiaww/Paklean-test.git
+2. Navigate to the project directory: cd Paklean-test
+3. Install dependencies: npm install
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Running the Application
+
+1. Start the development server: npm run dev
+2. Open your browser and visit `http://localhost:5173` to see the application.
+
+## Building for Production
+
+To create a production build, run:
+npm run build
+
+This will create an optimized build in the `dist` directory.
+
+## Configuration
+
+The application uses `react-i18next` for multi-language support. The translation files are located in the `src/i18n/locales` directory. You can modify or add new translations as needed.
+
+For data persistence, the application uses local storage or cookies (depending on your implementation). You can adjust the storage mechanism by modifying the relevant code in the `ProfilePage` and `EditProfilePage` components.
+
+## Dependencies
+
+The main dependencies used in this project are:
+
+- React
+- React Router
+- react-i18next (for internationalization)
+- js-cookie (if using cookies for data persistence)
+
+Refer to the `package.json` file for the complete list of dependencies and their versions.
