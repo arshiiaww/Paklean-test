@@ -2,7 +2,7 @@ import { IoPerson } from "react-icons/io5";
 import { Link } from 'react-router-dom';
 import { BsCursorFill } from "react-icons/bs";
 
-const BottomSheet = () => {
+const BottomSheet: React.FC = () => {
     return (
         <>
             <div className="w-full h-20 fixed bottom-0 left-0 right-0 shadow-[0_20px_40px_-4px_black]">

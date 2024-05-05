@@ -10,7 +10,7 @@ export default {
         light: '#B3B3B3',
         DEFAULT: '#373737'
       },
-      white: '#EEEEEE',
+      white: '#EEE',
       red: '#ef4444',
       blue: '#3b82f6',
     },
