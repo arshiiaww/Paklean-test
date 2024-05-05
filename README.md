@@ -20,18 +20,18 @@ This is a React application that provides a user profile page and an edit profil
 ## Installation
 
 1. Clone the repository: git clone https://github.com/arshiiaww/Paklean-test.git
-2. Navigate to the project directory: cd Paklean-test
-3. Install dependencies: npm install
+2. Navigate to the project directory: 'cd Paklean-test'
+3. Install dependencies: 'npm install'
 
 ## Running the Application
 
-1. Start the development server: npm run dev
+1. Start the development server: 'npm run dev'
 2. Open your browser and visit `http://localhost:5173` to see the application.
 
 ## Building for Production
 
 To create a production build, run:
-npm run build
+'npm run build'
 
 This will create an optimized build in the `dist` directory.
 
