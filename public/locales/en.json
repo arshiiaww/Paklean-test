@@ -1,0 +1,18 @@
+{
+  "profile": {
+    "title": "Profile",
+    "editProfile": "Edit Profile",
+    "payment": "Payment",
+    "security": "Security",
+    "logout": "Logout",
+    "log-out": "Log out",
+    "question": "Are you sure you want to log out?",
+    "cancel": "Cancel",
+    "yes": "Yes, log out"
+  },
+  "editProfile": {
+    "title": "Edit Profile",
+    "update": "Update",
+    "gender": "Select Gender"
+  }
+}

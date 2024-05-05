@@ -1,0 +1,18 @@
+{
+  "profile": {
+    "title": "Perfil",
+    "editProfile": "Editar Perfil",
+    "payment": "Pago",
+    "security": "Seguridad",
+    "logout": "Cerrar Sesión",
+    "log-out": "Cerrar Sesión",
+    "question": "¿Estás seguro de que quieres cerrar sesión?",
+    "cancel": "Cancelar",
+    "yes": "Sí, cerrar sesión"
+  },
+  "editProfile": {
+    "title": "Editar Perfil",
+    "update": "actualizar",
+    "gender": "Seleccione género"
+  }
+}

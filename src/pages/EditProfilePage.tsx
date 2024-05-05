@@ -5,6 +5,7 @@ import Calendar from "../components/Calendar";
 import Dropdown from "../components/Dropdown";
 import { useNavigate } from "react-router-dom";
 import { IoMailOutline } from "react-icons/io5";
+import { useTranslation } from 'react-i18next';
 
 interface FormData {
     fullName: string;
@@ -37,13 +38,25 @@ const EditProfilePage: React.FC = () => {
         navigate('/');
     };
 
+    // i18n
+    const { t, i18n } = useTranslation();
+
+    const handleLanguageChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+        const selectedLanguage = event.target.value;
+        i18n.changeLanguage(selectedLanguage);
+    };
+
     return (
         <div className='container mx-auto px-5 py-7'>
             <div className="flex items-center">
                 <Link to="/" className='mr-6'>
                     <HiOutlineArrowLeft className="scale-150" />
                 </Link>
-                <p className='font-semibold text-[17px] lg:text-lg'>Edit profile</p>
+                <p className='font-semibold text-[17px] lg:text-lg'>{t("editProfile.title")}</p>
+                <select className='text-[#9CA3AF] rounded-md bg-gray outline-none border border-[#EEEEEE] text-sm' value={i18n.language} onChange={handleLanguageChange}>
+                    <option value="en">En</option>
+                    <option value="es">Es</option>
+                </select>
             </div>
 
             <form onSubmit={handleSubmit} className='mt-8 text-[#9CA3AF]'>
@@ -89,7 +102,7 @@ const EditProfilePage: React.FC = () => {
                     onChange={(newGender) => setFormData({ ...formData, gender: newGender })}
                     options={['Male', 'Female', 'Other']}
                 />
-                <button className='w-full mx-auto bg-blue text-gray rounded-md p-3 mt-8 text-sm font-black'>Update</button>
+                <button className='w-full mx-auto bg-blue text-gray rounded-md p-3 mt-8 text-sm font-black'>{t("editProfile.update")}</button>
             </form>
         </div>
     );
